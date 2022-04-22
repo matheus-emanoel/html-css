@@ -7,25 +7,30 @@
     <title>Espaço</title>
     <style>
         body {
-            height: 98.4vh;
+            margin: 0;
+            height: 100vh;
             background-image: url(img/espaco.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
         div {
-            background-size: 100% 100%;
-            background-image: url(img/astronauta.png);
-            background-repeat: no-repeat;
-            width: 508px;
-            height: 508px;
+            margin: 0;
+        }
+        #astronauta {
+            max-width: 300px;
+            max-height: 308px;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
     </style>
 </head>
 <body>
-    <div id="astronauta"></div>
+    <div><img src="img/astronauta.png" id="astronauta"></div>
 </body>
 </html>
